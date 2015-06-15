@@ -1,7 +1,7 @@
 luhn.js
 =======
 
-[![npm](https://img.shields.io/npm/v/luhn-alg.svg?style=flat-square)]() [![Bower](https://img.shields.io/bower/v/luhn-alg.svg?style=flat-square)]() [![Travis](https://img.shields.io/travis/leodido/luhn.js/master.svg?style=flat-square)]()
+[![npm](https://img.shields.io/npm/v/luhn-alg.svg?style=flat-square)](https://www.npmjs.com/package/luhn-alg) [![Bower](https://img.shields.io/bower/v/luhn-alg.svg?style=flat-square)](https://github.com/leodido/luhn.js) [![Travis](https://img.shields.io/travis/leodido/luhn.js/master.svg?style=flat-square)](https://travis-ci.org/leodido/luhn.js)
 
 **Fastest JavaScript implementation of the Luhn algorithm**.
 
