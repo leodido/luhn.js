@@ -1,0 +1,33 @@
+{
+  "name": "luhn-alg",
+  "main": "index.js",
+  "version": "1.0.0",
+  "authors": [
+    "Leo Di Donato <leodidonato@gmail.com>"
+  ],
+  "description": "Fastest implementation of the Luhn algorithm",
+  "keywords": [
+    "luhn algorithm",
+    "luhn formula",
+    "luhn check",
+    "luhn",
+    "check",
+    "credit card",
+    "credit card validation",
+    "payment card",
+    "credit card number",
+    "card number",
+    "checksum",
+    "PAN",
+    "modulus 10"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/leodido/luhn.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test.js",
+    "gulpfile.babel.js"
+  ]
+}

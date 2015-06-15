@@ -1,0 +1,59 @@
+{
+  "name": "luhn-alg",
+  "description": "Fastest implementation of the Luhn algorithm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Leo Di Donato",
+    "email": "leodidonato@gmail.com",
+    "url": "http://git.io/leodido"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/leodido/luhn.js.git"
+  },
+  "homepage": "http://github.com/leodido/luhn.js",
+  "bugs": {
+    "url": "http://github.com/leodido/luhn.js/issues"
+  },
+  "devDependencies": {
+    "babel": "^5.5.6",
+    "babel-eslint": "3.1.6",
+    "babel-runtime": "^5.5.8",
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.4",
+    "chai": "^3.0.0",
+    "del": "^1.2.0",
+    "gulp": "gulpjs/gulp.git#4.0",
+    "gulp-cli": "gulpjs/gulp-cli#4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5",
+    "phantomjs": "^1.9.17",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "zuul": "^3.0.0"
+  },
+  "keywords": [
+    "luhn algorithm",
+    "luhn formula",
+    "luhn check",
+    "luhn",
+    "check",
+    "credit card",
+    "credit card validation",
+    "payment card",
+    "credit card number",
+    "card number",
+    "checksum",
+    "PAN",
+    "modulus 10"
+  ],
+  "scripts": {
+    "testp": "./node_modules/.bin/zuul --phantom -- test.js",
+    "testl": "./node_modules/.bin/zuul --local 8080 --open -- test.js",
+    "prepublish": "./node_modules/.bin/gulp production"
+  }
+}

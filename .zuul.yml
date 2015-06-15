@@ -1,0 +1,16 @@
+name: leodido/luhn.js
+
+ui: mocha-bdd
+
+browsers:
+  - name: chrome
+    version: latest
+
+capabilities:
+  recordScreenshots: false
+  videoUploadOnPass: false
+
+browserify:
+  - transform:
+      name: babelify
+      optional: runtime
