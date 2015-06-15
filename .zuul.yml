@@ -4,7 +4,21 @@ ui: mocha-bdd
 
 browsers:
   - name: chrome
-    version: latest
+    version: 39..latest
+  - name: firefox
+    version: 31..latest
+  - name: ie
+    version: 9..latest
+  - name: opera
+    version: 11..latest
+  - name: safari
+    version: 6..latest
+  - name: ipad
+    version: 5.0..latest
+  - name: iphone
+    version: 5.1..latest
+  - name: android
+    version: 4.0..latest
 
 capabilities:
   recordScreenshots: false
