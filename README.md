@@ -5,14 +5,14 @@ luhn.js
 
 Benchmarks [here](http://jsperf.com/credit-card-validator/20).
 
-This algorithm (also known as [Luhn formula](https://en.wikipedia.org/wiki/Luhn_algorithm)) is useful to validate a variety of identification numbers (e.g. credit card numbers).
+This algorithm (also known as [Luhn formula](https://en.wikipedia.org/wiki/Luhn_algorithm)) is useful to validate a variety of identification numbers (e.g. **credit card numbers**).
 
 Install
 -------
 
-[UMD](https://github.com/umdjs/umd) builds for development and production available.
+[UMD](https://github.com/umdjs/umd) builds for development - **index.js** and **index.js.map** - and production - **index.min.js** - available.
 
-So it's installable both on node and/or for browsers.
+So it's installable both on **node** and/or for **browsers**.
 
 ```
 $ npm install luhn-alg
