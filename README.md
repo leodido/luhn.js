@@ -1,6 +1,8 @@
 luhn.js
 =======
 
+[![npm](https://img.shields.io/npm/v/luhn-alg.svg?style=flat-square)]() [![Bower](https://img.shields.io/bower/v/luhn-alg.svg?style=flat-square)]() [![Travis](https://img.shields.io/travis/leodido/luhn.js/master.svg?style=flat-square)]()
+
 **Fastest JavaScript implementation of the Luhn algorithm**.
 
 Benchmarks [here](http://jsperf.com/credit-card-validator/20).

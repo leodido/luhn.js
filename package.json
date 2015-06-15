@@ -52,6 +52,7 @@
     "modulus 10"
   ],
   "scripts": {
+    "test": "./node_modules/.bin/zuul -- test.js",
     "testp": "./node_modules/.bin/zuul --phantom -- test.js",
     "testl": "./node_modules/.bin/zuul --local 8080 --open -- test.js",
     "prepublish": "./node_modules/.bin/gulp production"
