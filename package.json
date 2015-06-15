@@ -54,7 +54,7 @@
   ],
   "scripts": {
     "pretest": "./node_modules/.bin/mocha --compilers js:babel/register",
-    "test": "[ \"${SAUCELABS}\" = true ] && npm run testz",
+    "test": "([ \"${SAUCELABS}\" = true ] && npm run testz) || true",
     "testz": "./node_modules/.bin/zuul --no-coverage --concurrency 5 -- test.js",
     "testp": "./node_modules/.bin/zuul --phantom -- test.js",
     "testl": "./node_modules/.bin/zuul --local 8080 --open -- test.js",
