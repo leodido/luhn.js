@@ -1,8 +1,12 @@
 language: node_js
-node_js:
-- iojs
-- 0.1
-- 0.12
+matrix:
+  include:
+  - node_js: "iojs"
+    env: SAUCELABS=false
+  - node_js: "0.10"
+    env: SAUCELABS=false
+  - node_js: "0.12"
+    env: SAUCELABS=true
 cache:
   directories:
   - node_modules
