@@ -31,6 +31,7 @@
     "gulp-sourcemaps": "^1.5.2",
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.5",
+    "mocha": "^2.2.5",
     "phantomjs": "^1.9.17",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
@@ -52,6 +53,7 @@
     "modulus 10"
   ],
   "scripts": {
+    "pretest": "./node_modules/.bin/mocha --compilers js:babel/register",
     "test": "./node_modules/.bin/zuul -- test.js",
     "testp": "./node_modules/.bin/zuul --phantom -- test.js",
     "testl": "./node_modules/.bin/zuul --local 8080 --open -- test.js",

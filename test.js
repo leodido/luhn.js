@@ -6,9 +6,6 @@ import { expect } from 'chai';
 import luhn from './src';
 
 describe('luhn', () => {
-  // TODO: test luhn is a function
-  // TODO: test luhn is a closure
-
   it('should exists', () => {
     expect(luhn).to.exist;
   });
