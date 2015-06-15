@@ -10,6 +10,8 @@ This algorithm (also known as [Luhn formula](https://en.wikipedia.org/wiki/Luhn_
 Install
 -------
 
+~1KB.
+
 [UMD](https://github.com/umdjs/umd) builds for development - **index.js** and **index.js.map** - and production - **index.min.js** - available.
 
 So it's installable both on **node** and/or for **browsers**.
