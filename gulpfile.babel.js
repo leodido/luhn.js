@@ -2,6 +2,7 @@
 
 import gulp from 'gulp';
 import rename from 'gulp-rename';
+import bump from 'gulp-bump';
 import gutil from 'gulp-util';
 import uglify from 'gulp-uglify';
 import sourcemaps from 'gulp-sourcemaps';
@@ -22,10 +23,10 @@ function clean(done) {
   let e = path.extname(pack.main);
   let b = path.basename(pack.main);
   let n = b.replace(e, '');
-  let map = path.join(d, b + '.map');
-  let min = path.join(d, n + minext + e);
+  let mapf = path.join(d, b + '.map');
+  let minf = path.join(d, n + minext + e);
 
-  del([pack.main, map, min, '*.log'], done);
+  del([pack.main, mapf, minf, '*.log'], done);
 }
 
 // umd standalone library with sourcemaps
@@ -48,12 +49,19 @@ function min() {
     .pipe(uglify())
     .on('error', gutil.log)
     .pipe(rename({ extname: minext + '.js' }))
-    .pipe(gulp.dest('./'))
+    .pipe(gulp.dest('./'));
+}
+
+function bumpall() {
+  return gulp.src(['./package.json', './bower.json'])
+      .pipe(bump({ type: 'patch' }))
+      .pipe(gulp.dest('./'));
 }
 
 let development = gulp.series(clean, umd);
 let production = gulp.series(development, min);
 
+gulp.task('bump', bumpall);
 gulp.task('clean', clean);
 gulp.task('development', development);
 gulp.task('production', production);
