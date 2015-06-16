@@ -48,6 +48,14 @@ Include the UMD build (e.g., **index.min.js**) and you'll have a **luhn** functi
 
 Or use CommonJS, AMD, WTFYW etc.
 
+Tests
+-----
+
+This project is fully unit tested on:
+
+1. node.js 0.10, node.js 0.12, io.js
+2. about 50 [browser versions](https://github.com/leodido/luhn.js/blob/master/.zuul.yml)
+
 Credits
 -------
 
