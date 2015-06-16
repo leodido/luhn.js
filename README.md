@@ -3,14 +3,13 @@ luhn.js
 
 [![npm](https://img.shields.io/npm/v/luhn-alg.svg?style=flat-square)](https://www.npmjs.com/package/luhn-alg) [![Bower](https://img.shields.io/bower/v/luhn-alg.svg?style=flat-square)](https://github.com/leodido/luhn.js) [![Travis](https://img.shields.io/travis/leodido/luhn.js/master.svg?style=flat-square)](https://travis-ci.org/leodido/luhn.js)
 
-**Fastest JavaScript implementation of the Luhn algorithm**.
+> Fastest JavaScript implementation of the Luhn algorithm.
 
 Benchmarks [here](http://jsperf.com/credit-card-validator/20).
 
 This algorithm (also known as [Luhn formula](https://en.wikipedia.org/wiki/Luhn_algorithm)) is useful to validate a variety of identification numbers (e.g. **credit card numbers**).
 
-Install
--------
+### Install
 
 ~1KB.
 
@@ -47,6 +46,14 @@ $ true
 Include the UMD build (e.g., **index.min.js**) and you'll have a **luhn** function on the window/global scope.
 
 Or use CommonJS, AMD, WTFYW etc.
+
+Tests
+-----
+
+This project is fully unit tested on:
+
+* node.js 0.10, node.js 0.12, io.js
+* about 50 [browser versions](https://github.com/leodido/luhn.js/blob/master/.zuul.yml)
 
 Credits
 -------
