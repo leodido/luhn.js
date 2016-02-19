@@ -3,6 +3,7 @@
   "description": "Fastest implementation of the Luhn algorithm",
   "version": "1.0.1",
   "main": "index.js",
+  "jsnext:main": "src.js",
   "author": {
     "name": "Leo Di Donato",
     "email": "leodidonato@gmail.com",
