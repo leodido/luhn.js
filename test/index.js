@@ -1,6 +1,6 @@
 'use strict';
 
-/* global describe:false, it:false */
+
 
 import { expect } from 'chai';
 import luhn from './src';

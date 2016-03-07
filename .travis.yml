@@ -1,12 +1,12 @@
-language: node_js
+language: node_js'
 matrix:
   include:
-  - node_js: "iojs"
-    env: SAUCELABS=false
-  - node_js: "0.10"
-    env: SAUCELABS=false
-  - node_js: "0.12"
+  - node_js: "stable"
     env: SAUCELABS=true
+  - node_js: "4"
+    env: SAUCELABS=true
+  - node_js: "0.12"
+    env: SAUCELABS=false
 cache:
   directories:
   - node_modules
@@ -22,7 +22,6 @@ deploy:
     secure: QG0di2PIjXr0V1hQupe9HRbiE7OvB/XUt7Jjc6tqKTJbF7KFKPqE1fZBPwdJk76Q8jp2E+2XTWFKg/Y2H681XL0ehEWHMf14VxSLVNCjNLyiTM5EgbryW5emHLeSbQZDQ8TMK84u+ZPmgnNp+3QuuOerDqpOEQMJX4SxyWFDCLfUSBF2fLOAbjiyJy6cbjKuAjM5SN+fQ0l4uOmOE8pQhpryjlmjniOh1EjQTGCtR1G4NRQnWvon7p5cgdMyXhioXOT5UjFFAeqUrDaNycLf8ufPOzsCdVOZC6YUFb90AFlrSEsVO9wA9hoCAGUb9hU7fK6JabLD7AxNVlzGUYP0r0Oge+QWmNlgs94f5FZb7Uvho91aTYl5JaHMra2OoBvCaym8kcUFqgdAXWMgZod1wwg138z6vhqqhU5p8X3VgQuAe1ztly053Rm9s8VbkxzKWrBPJNVlfEvmQKAHkZklrDk7kYcCz2k5YGy8qV+vzfUH/5jVhJllTxo9q21BWvPHed6y6PSZvZkoCCFsL66jHdjREyeH8J7MQfaB8aDtqQJ1eXfjTWMvKGQRONUHt1x7q4TiGs8CtuGW1ZAPiNoZGCqPbLBcHLlPY3kwhwqfSv3MP8U1PhT6lbnZrI6IkvUWegivZDmYCV11fYvEB3pkZ6ZdOKOXp6EQVSqSfV0jUqw=
   on:
     tags: true
-    node_js: "0.12"
     repo: leodido/luhn.js
 notifications:
   email: false

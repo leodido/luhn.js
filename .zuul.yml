@@ -23,8 +23,3 @@ browsers:
 capabilities:
   recordScreenshots: false
   videoUploadOnPass: false
-
-browserify:
-  - transform:
-      name: babelify
-      optional: runtime

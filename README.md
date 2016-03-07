@@ -11,11 +11,11 @@ This algorithm (also known as [Luhn formula](https://en.wikipedia.org/wiki/Luhn_
 
 ### Install
 
-~1KB.
+**~ 500 bytes**.
 
-[UMD](https://github.com/umdjs/umd) builds for development - **index.js** and **index.js.map** - and production - **index.min.js** - available.
+[UMD](https://github.com/umdjs/umd) bundles for development - **[index.js](lib/index.js)** with sourcemap **[index.js.map](lib/index.js.map)** - and production - **[index.min.js](lib/index.min.js)** - available.
 
-So it's installable both on **node** and/or for **browsers**.
+So it's installable both on **node** and/or for **browsers**, with almost every module system existing (e.g. AMD, CJS).
 
 ```
 $ npm install luhn-alg
@@ -43,7 +43,7 @@ $ true
 
 ### Browsers
 
-Include the UMD build (e.g., **index.min.js**) and you'll have a **luhn** function on the window/global scope.
+Include the bundle (e.g., **index.min.js**) and you'll have a **luhn** function on the window/global scope.
 
 Or use CommonJS, AMD, WTFYW etc.
 
@@ -52,7 +52,7 @@ Tests
 
 This project is fully unit tested on:
 
-* node.js 0.10, node.js 0.12, io.js
+* node.js 0.12, node.js 4, latest node.js stable release
 * about 50 [browser versions](https://github.com/leodido/luhn.js/blob/master/.zuul.yml)
 
 Credits
@@ -63,4 +63,4 @@ Credits
 
 ---
 
-[![Analytics](https://ga-beacon.appspot.com/UA-49657176-1/luhn.js)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-49657176-1/luhn.js?flat)](https://github.com/igrigorik/ga-beacon)
