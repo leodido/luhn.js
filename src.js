@@ -7,7 +7,7 @@ export default function(array) {
       sum = 0;
 
     while (len--) {
-      sum += !(bit ^= 1) ? parseInt(number[len], 10) : array[number[len]];
+      sum += !(bit ^= 1) ? Number(number[len]) : array[number[len]];
     }
 
     return sum % 10 === 0 && sum > 0;
